@@ -13,18 +13,26 @@
     </style>
 </head>
 <body>
-    <button type="button" class="btn btn-danger" onclick="saySomething()">
-        My Button
-    </button>
+    <div class = "jumbotron text-center">
+        <h1>Personal info</h1>
+        <button type="button" class="btn btn-danger" onclick="changeText()">
+            What is my info?
+        </button>
+    </div>
     <script>
         const user = {
             name: 'Desiree',
             age: '26',
             occupation: 'Barista'
-        }   function user(name,age,occupation){
+        }   
+        function greet(name,age,occupation){
             return (age);
+            console.log(user);
         }
-        document.getElementById().innerHTML = ;
+        const header = document.querySelector('h1')
+        function changeText() {
+            header.innerText = 'Desiree, 26, Barista'
+        }
     </script>    
 </body>
 </html>
